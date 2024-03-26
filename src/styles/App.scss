@@ -1,0 +1,78 @@
+.App {
+    text-align: center;
+    h1 {
+        display: inline-block;
+        color: white;
+        font-family: 'Righteous', serif;
+        font-size: 3.5em; 
+        text-shadow: .06em .06em 0 #4caf50;
+        }
+}
+.noteForm {
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        input, textarea {
+          width: 300px;
+          padding: 8px 8px 8px 16px;
+          margin-top: 5px;
+          margin-bottom: 5px;
+        }
+        textarea {
+          resize: vertical;
+          text-align: left;
+          min-height: 22px;
+        }
+        button {
+          align-self: center;
+          padding: 10px;
+          margin-top: 1rem;
+          margin-right: -13.5rem;
+          background-color: #4caf50;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          &:hover {
+              background-color: #74ad76;
+          }
+        }
+    }
+}
+.noteList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    .notes {
+        align-self: flex-start;
+        border: 1px solid grey;
+        width: 300px;
+        min-height: 120px;
+        background-color: white;
+
+    }
+    .action-button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 5px;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    .edit-button {
+        color: #28a745;
+    }
+
+    .delete-button {
+        color: #dc3545;
+    }
+
+    .favorite-button {
+        color: #ffc107;
+    }
+}
